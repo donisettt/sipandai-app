@@ -32,7 +32,7 @@ fun AppNavGraph(navController: NavHostController) {
             LoginScreen(
                 onBackClick = { navController.popBackStack() },
                 onLoginClick = { username, password ->
-                    // TODO: proses login atau navigasi
+
                 }
             )
         }

@@ -29,7 +29,6 @@ fun LoginScreen(onBackClick: () -> Unit, onLoginClick: (String, String) -> Unit)
             .fillMaxSize()
             .padding(24.dp)
     ) {
-        // Tombol back di kiri atas
         IconButton(
             onClick = onBackClick,
             modifier = Modifier.align(Alignment.TopStart)
@@ -37,7 +36,6 @@ fun LoginScreen(onBackClick: () -> Unit, onLoginClick: (String, String) -> Unit)
             Icon(imageVector = Icons.Default.ArrowBack, contentDescription = "Back")
         }
 
-        // Konten utama di tengah
         Column(
             modifier = Modifier
                 .fillMaxSize()
@@ -45,7 +43,6 @@ fun LoginScreen(onBackClick: () -> Unit, onLoginClick: (String, String) -> Unit)
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            // Judul dan paragraf
             Column(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalAlignment = Alignment.Start
@@ -97,7 +94,6 @@ fun LoginScreen(onBackClick: () -> Unit, onLoginClick: (String, String) -> Unit)
             }
         }
 
-        // Ini di bawah layar, center
         Text(
             text = "© 2025 – Doni S Wahyono",
             fontSize = 12.sp,

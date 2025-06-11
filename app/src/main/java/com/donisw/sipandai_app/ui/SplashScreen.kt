@@ -20,11 +20,9 @@ import kotlinx.coroutines.delay
 
 @Composable
 fun SplashScreen(navController: NavController) {
-    // State animasi
-    val offsetX = remember { Animatable(-300f) }  // Mulai dari kiri luar layar
-    val alpha = remember { Animatable(0f) }       // Transisi fade in
+    val offsetX = remember { Animatable(-300f) }
+    val alpha = remember { Animatable(0f) }
 
-    // Side effect buat animasi + delay ke WelcomeScreen
     LaunchedEffect(true) {
         offsetX.animateTo(
             targetValue = 0f,
@@ -34,7 +32,7 @@ fun SplashScreen(navController: NavController) {
             targetValue = 1f,
             animationSpec = tween(durationMillis = 500)
         )
-        delay(2000) // Total tampil 2 detik
+        delay(2000)
         navController.navigate("welcome") {
             popUpTo("splash") { inclusive = true }
         }

@@ -40,10 +40,8 @@ fun OnboardingScreen(
             IconButton(onClick = onBackClick, modifier = Modifier.align(Alignment.Start)) {
                 Icon(imageVector = Icons.Default.ArrowBack, contentDescription = "Kembali")
             }
-
             Spacer(modifier = Modifier.height(8.dp))
 
-            // Bagian tengah ditaruh di Column yang center
             Column(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -78,7 +76,6 @@ fun OnboardingScreen(
                 )
             }
 
-            // Tombol di bawah
             Row(
                 modifier = Modifier
                     .fillMaxWidth()

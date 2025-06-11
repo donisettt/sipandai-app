@@ -28,7 +28,6 @@ fun WelcomeScreen(onStartClick: () -> Unit) {
     ) {
         Spacer(modifier = Modifier.height(40.dp))
 
-        // Logo Pangandaran
         Image(
             painter = painterResource(id = R.drawable.logo_pangandaran),
             contentDescription = "Logo Kabupaten Pangandaran",
@@ -37,7 +36,6 @@ fun WelcomeScreen(onStartClick: () -> Unit) {
                 .padding(top = 48.dp)
         )
 
-        // Panel Biru
         Box(
             modifier = Modifier
                 .fillMaxWidth()
